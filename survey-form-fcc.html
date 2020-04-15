@@ -1,0 +1,90 @@
+<script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <link rel="stylesheet" type="text/css" href="style-form-fcc.css">
+  <title>FCC Survey</title>
+  <meta name="description" content="Build a Survey">
+  <meta name="author" content="Ana Tekic">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+</head>
+
+<body>
+ <div id="naslov">
+  <h1 id="title">Istraživanje o potrebi potrebe otvaranja Blogbudsmana</h1>
+  <p id="description">Kako da znamo ima li potrebe ako ne znamo ima li potrebe za potrebom?</p>
+  </div>
+  
+<form id="survey-form" method="get">
+  
+  <div id="podaci">
+  <label class="podaci-label" for="Ime">Ime: </label><br>
+  <input id="name" type="text" name="ime"  placeholder="Ime" required><br>
+  <label class="podaci-label" for="Prezime">Prezime: </label> <br>
+  <input id="prezime" type="text" name="prezime"  placeholder="Prezime" required><br>
+ <label class="podaci-label" for="email">E-mail adresa: </label><br>
+  <input id="email" type="email" name="email"  placeholder="Email" required><br>
+  </div>
+  <br>
+ 
+  <label class="podaci-label" for="number">Brojevima od 11 do 100 označite svoju razinu potrebe o potrebi potrebe za otvaranjem Blogbudsmana: </label>
+  <input id="number" type="number" name="number" min="11" max="100" placeholder="Trebam Blogbudsman ovoliko" required><br>
+
+  <br>
+ <label class="podaci-label" for="prednosti">Što želite da bude fokus potrebe za Blogbudsmanom?</label> <br>   
+    <select id="dropdown" name="prednosti">
+		  <option value="bridges">Building Bridges</option>
+		  <option value="capacities">Building capacities</option>
+		
+      <option value="building-capacities">Building capacities</option>
+      <option value="building-bridges">Building bridges</option>
+    <option value="intersectionality">Intersectionality</option>
+    <option value="education">Education</option>
+    <option value="cooperation">Stakeholder cooperation</option>
+      <option value="narrative">Positive Narrative</option>
+       <option value="added-value">Added Value</option>
+	</select><br>
+   <br>
+  <p class="imp">Što smatrate da je najvažnije za građane?</p>
+  <div class="radio">
+    <input type="radio" id="nova-legislativa" name="radio" value="zakoni">
+    <label class="pojmovi" for="nova-legislativa">Novi zakoni</label><br>
+    <input type="radio" id="crkva" name="radio" value="crkva">
+    <label class="pojmovi" for="crkva">Suradnja s vjerskim zajednicama</label><br>
+    <input type="radio" id="sindikati" name="radio" value="sindikati">
+    <label class="pojmovi" for="sindikati">Suradnja s sindikatima</label><br>
+    <input type="radio" id="svi" name="radio" value="svi">
+    <label class="pojmovi" for="svi">Suradnja svi sa svima</label><br>
+    <input type="radio" id="extra" name="radio" value="effort">
+    <label class="pojmovi" for="extra">Extra effort</label> <br>
+    <input type="radio" id="independence" name="radio" value="independence">
+    <label class="pojmovi" for="independence">Nezavisnost</label><br>
+  <br>
+  </div>
+  <div class="boxes">
+  <p class="imp">Na koji način to treba ostvariti?</p>  
+  <div class="radio">
+     <input type="checkbox" id="zakon" name="radio" value="zakoni">
+    <label class="pojmovi" for="nova-legislativa">Novi zakoni</label><br>
+    <input type="checkbox" id="vjera" name="radio" value="crkva">
+    <label class="pojmovi" for="crkva">Suradnja s vjerskim zajednicama</label><br>
+    <input type="checkbox" id="union" name="radio" value="sindikati">
+    <label class="pojmovi" for="sindikati">Suradnja s sindikatima</label><br>
+    <input type="checkbox" id="alles" name="radio" value="svi">
+    <label class="pojmovi" for="svi">Suradnja svi sa svima</label><br>
+    <input type="checkbox" id="effort" name="radio" value="effort">
+    <label class="pojmovi" for="extra">Extra effort</label> <br>
+    <input type="checkbox" id="nezavisnost" name="radio" value="independence">
+    <label class="pojmovi" for="independence">Nezavisnost</label><br>
+    </div>
+  </div> <br>
+<label class="komentar" for="komentar">Vjerojatno želite svašta još dodati, predložiti, komentirati. Ovdje to možete sada i odmah</label><br>
+<textarea class="komentar" name="komentar" type="text" placeholder="Ovdje upišite čestitke,želje i pozdrave"></textarea><br>
+  <input id="submit" type="submit" value="Pošalji">
+                                     
+  </form>
+   
+  
+</body>
+</html>
